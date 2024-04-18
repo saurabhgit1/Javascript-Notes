@@ -17,8 +17,23 @@
 8. Always move your variables initialization to top of program to reducer temporal dead zone window.
 
 ## Scope + Shadowing
+
 1. We group multiple statements together in a block so that we can use where JS expects a single statement.
-2. Block Scope - 
+2. Block Scope -
 3. let and const are block scoped.
 4. var is function scoped or global scoped.
 5. illegal shadowing
+
+## Closures
+
+1. Closure = function + it's lexical scope.
+2. When a function is returned from another function, the entire closure is returned instead of just the function.
+3. we can directly call the returned function like outerFn()(); or var a = outerFn(); a();
+4. usage - memoization, data hiding (encapsulation), higher order functions
+# disadvantage of closure
+1. overconsumption of memory
+2. garbage collectore - a program which frees the memory by removing unused variables
+
+## Constructor Function in JS
+1. We can create function and use this keyword inside.
+2. We can call that constructor function using new keyword to create objects. (emulating class behaviour).
